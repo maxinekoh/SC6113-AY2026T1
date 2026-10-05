@@ -1,13 +1,14 @@
 <head>
-    <meta name="viewport" content="device=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
-
-
-
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="container">
-        <h2>Welcome to SC6113 DAPP</h2>
+        <h2>Welcome to SC6113 DApp</h2>
+        <h3>Please enter your name: </h3>
+        <form action="/main" method="POST">
+            <input type="text" name="q">
+            <input type="submit" value="Enter">
+        </form>
     </div>
-
 </body>
